@@ -1,0 +1,2 @@
+# hamhex
+Hamartic Hexagram
