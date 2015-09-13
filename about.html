@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Hamartic Hexagram</title>
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="author" content="" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+		<link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAD9/f0AAAAAAP///wCcnJwA5+fnAAEBAQD+/v4AAwMDAKSkpAD5+fkABQUFAOTk5AAHBwcAAAAAAAAAAAAAAAAAEiIiIAIiIiESIiIhEiIiIRIiIkEUIiIhEiIiEzEiIiEaERERERERoRZbkQIgGbVhEoF8IiLHGCESIRYiImESIRIhFiIiYRIhEoF8IiLHGCEWW5ECIBm1YRoRERERERGhEiIiEzEiIiESIiJBFCIiIRIiIiESIiIhEiIiIAIiIiGAAQAAgAEAAIABAACAAQAAgAEAAIABAACAAQAAgAEAAIABAACAAQAAgAEAAIABAACAAQAAgAEAAIABAACAAQAA" rel="icon" type="image/x-icon" />
+		<script src="http://static.tumblr.com/8dky9io/VRgn7nlof/modernizr.custom.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
+		
+<script type="text/javascript" src="http://laura-schmal.de/data/tumblr/lightbox/js/jquery-1.7.2.min.js"></script>
+ 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+ 
+<script src="http://static.tumblr.com/rzl30kg/eAxm7a751/jquery.style-my-tooltips.js"></script>
+ 
+<script>
+(function($){
+$(document).ready(function(){
+$("[title]").style_my_tooltips({
+tip_follows_cursor:true,
+tip_delay_time:200,
+tip_fade_speed:300
+}
+);
+});
+})(jQuery);
+</script>
+
+<style type="text/css">
+#s-m-t-tooltip {
+max-width:300px;
+margin:10px 0px 0px 15px;
+text-transform:uppercase;
+font-family:helvetica;
+letter-spacing:1px;
+line-height:80%;
+font-size:8px;
+color:#060606;
+background:#fff;
+border:0px double #ebe9e9;
+padding:5px;
+z-index:999
+}
+    .og-grid {
+	list-style: none;
+	padding: 0px 0;
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+}
+
+.og-grid li {
+	display: inline-block;
+	margin: 70px 5px 0 5px;
+	vertical-align: top;
+	height: 250px;
+}
+
+.og-grid li > a,
+.og-grid li > a img {
+	border: none;
+	outline: none;
+	display: block;
+	position: relative;
+}
+
+.og-grid li.og-expanded > a::after {
+	top: auto;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-bottom-color: #ddd;
+	border-width: 15px;
+	left: 50%;
+	margin: -20px 0 0 -15px;
+}
+
+.og-expander {
+	position: absolute;
+	background: #ddd;
+	top: auto;
+	left: 0;
+	width: 100%;
+	margin-top: 10px;
+	text-align: left;
+	height: 0;
+	overflow: hidden;
+}
+
+.og-expander-inner {
+	padding: 50px 30px;
+	height: 100%;
+}
+
+.og-close {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	top: 20px;
+	right: 20px;
+	cursor: pointer;
+}
+
+.og-close::before,
+.og-close::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	height: 1px;
+	background: #888;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.og-close::after {
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.og-close:hover::before,
+.og-close:hover::after {
+	background: #333;
+}
+
+.og-fullimg,
+.og-details {
+	width: 50%;
+	float: left;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.og-details {
+	padding: 0 40px 0 20px;
+}
+
+.og-fullimg {
+	text-align: center;
+}
+
+.og-fullimg img {
+	display: inline-block;
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.og-details h3 {
+	font-weight: 300;
+	font-size: 52px;
+	padding: 40px 0 10px;
+	margin-bottom: 10px;
+}
+
+.og-details p {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 22px;
+	color: #999;
+}
+
+.og-details a {
+	font-weight: 700;
+	font-size: 16px;
+	color: #333;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding: 10px 20px;
+	border: 3px solid #333;
+	display: inline-block;
+	margin: 30px 0 0;
+	outline: none;
+}
+
+.og-details a::before {
+	content: '\2192';
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.og-details a:hover {
+	border-color: #999;
+	color: #999;
+}
+
+.og-loading {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: #ddd;
+	box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ccc;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -25px 0 0 -25px;
+	-webkit-animation: loader 0.5s infinite ease-in-out both;
+	-moz-animation: loader 0.5s infinite ease-in-out both;
+	animation: loader 0.5s infinite ease-in-out both;
+}
+
+@-webkit-keyframes loader {
+	0% { background: #ddd; }
+	33% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd; }
+	66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc; }
+}
+
+@-moz-keyframes loader {
+	0% { background: #ddd; }
+	33% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd; }
+	66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc; }
+}
+
+@keyframes loader {
+	0% { background: #ddd; }
+	33% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd; }
+	66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc; }
+}
+
+@media screen and (max-width: 830px) {
+
+	.og-expander h3 { font-size: 32px; }
+	.og-expander p { font-size: 13px; }
+	.og-expander a { font-size: 12px; }
+
+}
+
+@media screen and (max-width: 650px) {
+
+	.og-fullimg { display: none; }
+	.og-details { float: none; width: 100%; }
+	
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+    /* General Demo Style */
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+html { height: 100%; }
+
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+body {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    background: #f9f9f9;
+    font-weight: 300;
+    font-size: 15px;
+    color: #333;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+a {
+	color: #555;
+	text-decoration: none;
+}
+
+.container {
+	width: 100%;
+	position: relative;
+	
+}
+
+.container > header {
+	width: 90%;
+	max-width: 1240px;
+	margin: 0 auto;
+	position: relative;
+	padding: 0 30px 50px 30px;
+}
+
+.container > header {
+	padding: 60px 30px 50px;
+	text-align: center;
+	background-color:#000;
+	width:100%;
+}
+
+.container > header h1 {
+	font-size: 25px;
+	line-height: 30px;
+	margin: 0 auto;
+	font-weight: 700;
+	color: #999;
+	font-family:;
+
+}
+
+.container > header h1 span {
+	display: block;
+	font-size: 13px;
+	font-weight: 300;
+	
+}
+
+.main > p {
+	text-align: center;
+	padding: 50px 20px;
+}
+
+/* Header Style */
+.codrops-top {
+	line-height: 24px;
+	font-size: 11px;
+	background: #fff;
+	background: rgba(255, 255, 255, 0.5);
+	text-transform: uppercase;
+	z-index: 9999;
+	position: relative;
+	box-shadow: 1px 0px 2px rgba(0,0,0,0.2);
+}
+
+.codrops-top a {
+	padding: 0px 10px;
+	letter-spacing: 1px;
+	color: #333;
+	display: inline-block;
+}
+
+.codrops-top a:hover {
+	background: rgba(255,255,255,0.8);
+	color: #000;
+}
+
+.codrops-top span.right {
+	float: right;
+}
+
+.codrops-top span.right a {
+	float: left;
+	display: block;
+}
+/*----
+#links {
+    background: rgba(0,0,0,1);
+    color:#fff;
+    font-size:20px;
+}
+#links a {
+    color:#fff;
+     -webkit-transition:all 0.6s;
+    -moz-transition:all 0.6s;
+    -ms-transition:all 0.6s;
+    -o-transition:all 0.6s;
+    transition:all 0.6s;  
+}
+#links a:hover {
+    color:#444;
+      -webkit-transition:all 0.6s;
+    -moz-transition:all 0.6s;
+    -ms-transition:all 0.6s;
+    -o-transition:all 0.6s;
+    transition:all 0.6s;  
+}----*/
+#box {
+    position: relative;
+    width: 400px;
+    height: auto;
+    left:50%;
+    margin-left:-200px;
+    margin-top: 100px;
+    background-color: #11c8c3;
+    opacity: 0.5;
+    color: #fff;
+    font-size: 20px;
+    font-family: Raleway;
+    text-transform: none;
+    font-style: bold;
+    line-height: 100%;
+    text-shadow:0px 0px #000;
+    padding: 30px;
+    letter-spacing:2px;
+    text-align: center;
+    opacity: 0.9;
+    margin-bottom:30px;
+    -webkit-transition: 0.7s ease-in-out;
+    -moz-transition: 0.7s ease-in-out;
+    transition: 0.7s ease-in-out;    
+}
+
+#links {
+    
+    position:absolute;
+    top:10%;
+    left:5%;
+    backgrhound: rgba(0,0,0,1);
+    color:#fff;
+    font-size:40px;
+}
+
+.link1 a {
+    position:relative;
+    color:#fff;
+    display:inline-block;
+    margin:0px;
+     -webkit-transition:all 0.6s;
+    -moz-transition:all 0.6s;
+    -ms-transition:all 0.6s;
+    -o-transition:all 0.6s;
+    transition:all 0.6s;  
+}
+.link1 a:hover {
+    color:#f9c500;
+      -webkit-transition:all 0.6s;
+    -moz-transition:all 0.6s;
+    -ms-transition:all 0.6s;
+    -o-transition:all 0.6s;
+    transition:all 0.6s;  
+}
+
+
+
+
+.link2 a {
+    color:#fff;
+    position:relative;
+    display:inline-block;
+    margin:0px;
+     -webkit-transition:all 0.6s;
+    -moz-transition:all 0.6s;
+    -ms-transition:all 0.6s;
+    -o-transition:all 0.6s;
+    transition:all 0.6s;  
+}
+.link2 a:hover {
+    color:#34c293;
+      -webkit-transition:all 0.6s;
+    -moz-transition:all 0.6s;
+    -ms-transition:all 0.6s;
+    -o-transition:all 0.6s;
+    transition:all 0.6s;  
+}
+
+
+
+
+.link3 a {
+    color:#fff;
+     -webkit-transition:all 0.6s;
+    -moz-transition:all 0.6s;
+    -ms-transition:all 0.6s;
+    -o-transition:all 0.6s;
+    transition:all 0.6s;  
+}
+.link3 a:hover {
+    color:#3a2e51;
+      -webkit-transition:all 0.6s;
+    -moz-transition:all 0.6s;
+    -ms-transition:all 0.6s;
+    -o-transition:all 0.6s;
+    transition:all 0.6s;  
+}
+
+
+
+
+.link4 a {
+    color:#fff;
+     -webkit-transition:all 0.6s;
+    -moz-transition:all 0.6s;
+    -ms-transition:all 0.6s;
+    -o-transition:all 0.6s;
+    transition:all 0.6s;  
+}
+.link4 a:hover {
+    color:#cc1a43;
+      -webkit-transition:all 0.6s;
+    -moz-transition:all 0.6s;
+    -ms-transition:all 0.6s;
+    -o-transition:all 0.6s;
+    transition:all 0.6s;  
+}
+</style>
+	</head>
+	<body>
+		<div class="container">	
+			
+			<header class="clearfix">
+				<h1><center><img src="https://31.media.tumblr.com/091a84a4b3ca1e72c7a7aa2ccabae062/tumblr_n8mrfmPddT1tbr9uio1_1280.png" width="500"></center>J O C E L Y N&#160&#160&#160L E E<span>Web Design, Typography, Lettering</span></h1>	
+			<div id="links">
+			    <div class="link1"><a href="/" title="index">◢</a></div>
+			    <div class="link2"><a href="/about" title="about me">◣</a></div>
+			    <div class="link3"><a href="/shop" title="shop">◥</a></div>
+			    <div class="link4"><a href="/contact" title="contact">◤</a></div>
+			</div></header>
+
+
+<div id="box">
+
+Jocelyn, 16, Canada. I have been coding for 2 years now. I know HTML, CSS, and Javascript, and am currently learning Ruby and C++. My art is mainly in the form of graphic design, calligraphy and handlettering, which I have been practicing for over 7 years now. I freelance as a web designer and I am currently involved in an advertising agency. Hamartic Hexagram is my handle.</div>
